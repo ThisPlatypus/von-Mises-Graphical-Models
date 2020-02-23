@@ -1,23 +1,10 @@
----
-title: "von Mises Graphical Models"
-author: "Chiara Camerota"
-date: "23/2/2020"
-output: html_document
----
-
-
-
-
-
 Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random angles, it has a multivariate von Mises distribution; i.e. such that:
-$$ f_{{\Theta}}(\Theta)= C^{-1}_p ({\kappa}, {\Lambda}) \exp\{ {\kappa}^T c({\Theta},{\mu}) + \frac{1}{2} s({\Theta},{\mu})^T {\Lambda} s({\Theta}, {\mu}) \} $$
+$$f_{{\Theta}}(\Theta)= C^{-1}_p ({\kappa}, {\Lambda}) \exp\{ {\kappa}^T c({\Theta},{\mu}) + \frac{1}{2} s({\Theta},{\mu})^T {\Lambda} s({\Theta}, {\mu}) \}$$
 where $-\pi<\theta_j\leq\pi$ , $-\pi<\mu_j\leq\pi$, $\kappa_j \geq 0$ ,  $-\infty<\lambda_{jl}<\infty$, and  $C^{-1}_p ({\kappa},{\Lambda})$ is a normalizing constant, 
-\begin{align*}
-c({\Theta}, {\mu})^T &= (\cos(\theta_1-\mu_1), \cos(\theta_2-\mu_2), \dots, \cos(\theta_p-\mu_p)), \\
+$$c({\Theta}, {\mu})^T &= (\cos(\theta_1-\mu_1), \cos(\theta_2-\mu_2), \dots, \cos(\theta_p-\mu_p)), \\
 s({\Theta}, {\mu})^T &= ( \sin(\theta_1- \mu_1), \sin(\theta_2- \mu_2), \dots, \sin(\theta_p - \mu_p) ), \\
 {\mu}^T &= (\mu_1, \mu_2, \dots, \mu_p) \ ,\qquad \qquad {\kappa}^T= (\kappa_1, \kappa_2, \dots, \kappa_p), \\
-[{\Lambda}]_{jl}&=\lambda_{jl}=\lambda_{lj} \ ,  \qquad \qquad \lambda_{jj}=0
-\end{align*}
+[{\Lambda}]_{jl}&=\lambda_{jl}=\lambda_{lj} \ ,  \qquad \qquad \lambda_{jj}=0$$
 It is possible to build a graphical model, $({G}, Q)$, where ${G}=({V}, {E})$, and the set ${V}$ contains $p$ vertices, each of this is referred about each variables ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$, and the set ${E}$ is such that a missing edge indicates a conditional independence among variables.
 
 
@@ -49,8 +36,7 @@ The amino acid sequence is called primary structure, the peptide chains are name
 For comprehensive accounts on protein structure see, for example, \cite{lesk2001introduction}.\\
 
  An example of protein backbone is:
-$$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -C_p
-$$
+$$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -C_p$$
  \begin{figure}
 	\centering
 	\includegraphics[scale=0.2]{img/dihedral1}  $\qquad$   \includegraphics[scale=0.15]{img/treangoli}
