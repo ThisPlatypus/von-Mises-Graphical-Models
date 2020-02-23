@@ -28,7 +28,10 @@ This is to predict the three dimensional structure of a protein given its amino 
 
 Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.
 
-<img src="README_files/figure-html/pep.jpeg" width="2" height="3" label="fig:pep" cap="Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide" />
+<figure>
+<img src="README_files/figure-html/pep.jpeg" width=30% label="fig:pep" >
+ <figcaption>Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide</figcaption>
+</figure>
 
 
 Specific atomic groups, so-called \emph{amino acids}, give rise to a protein. There are twenty commonly occurring amino acid, each with the same structure. In particular, an amino acid has a central carbon acid, denoting by $C^\alpha$, which bind to a hydrogen atom, $H$, an amine group $NH_2$ , a carboxyl group ($COOH$) and a side chain. The last identify the amino acid kind, while the carboxyl group makes a link among different amino acids, and is called peptide bond. Figure \ref{fig:pep} shows an example of this bond. One or more peptide bond form a polypeptide chains, and one or more of those form a protein.
@@ -44,12 +47,16 @@ For comprehensive accounts on protein structure see, for example, \cite{lesk2001
  
 $$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -C_p$$
 
-<img src="README_files/figure-html/dihedral1.png" scale="0.2" label="fig:dihedral1" cap="Left panel shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2},A_{i-1},A_i,A_{i+1}$. Note that $A_{i-1}$ and $A_{i+1}$ are coplanar, it is the same for $A_{i}$ and $A_{i+1}$. The right panel shows a dihedral angles $\psi_i,\phi_i$, and $\omega_i$ in terms of atoms." />
+<figure>
+<img src="README_files/figure-html/dihedral1.png" width=20%>
+ <label>fig:dihedral1</label> 
+ </figure>
 
 
 We consider a dihedral angle, which is the angle between planes through two sets of three atoms, having two atoms in common. 
-
-<img src="README_files/figure-html/dihedral2.png" scale="0.5" label="fig:dihedral2" cap="Dihedral angles $\phi$, $\psi$, and $\omega$."/>
+<figure>
+<img src="README_files/figure-html/dihedral2.png" width=50%> <label>fig:dihedral2</label> <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
+</figure>
 
 
 Figure \ref{fig:dihedral1} shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2}, A_{i-1}, A_i , A_{i+1}$. It is important to know that the plane $\Pi_1$ passing through the atoms $A_i$ and $A_{i-2}$, as the plane $\Pi_2$ passing through the atoms $A_{i-1}$ and $A_{i+1}$. The angle $\theta$ is measured between $-\pi$ and $\pi$, the zero direction is observed when the plane $\Pi_1$ and $\Pi_2$ collapses. Clearly, if $A_{i}=N_i$, then $A_{i+1}=C_{i}$, $A_{i-1}=C^\alpha_i$ and $A_{i-2}=C_i$, while $\theta$ is $\phi_i$. This situation is clarifying in figure \ref{fig:dihedral2}.
@@ -61,9 +68,9 @@ Figure \ref{fig:dihedral1} shows a dihedral angle $\theta$ defined in terms of a
  
  Figure \ref{fig:Rama} clarifies how to read a Ramachandran plot, and highlight each zone that corresponds to the different shape of the secondary structure.
  
- 
- <img src="README_files/figure-html/prova.png" scale="0.5" label="fig:Rama" fig.cap="Ramachandran plot, that draws a $\psi$ angle versus $\phi$ angle."/>
-
+<figure>
+ <img src="README_files/figure-html/prova.png" width=50%> <label>fig:Rama</label> <figcaption>Ramachandran plot, that draws a Psi angle versus Phi angle.</figcaption>
+</figure>
 
 ## Protein data
 
@@ -73,7 +80,8 @@ Fortunately, there is a Protein Structure Databank (PDB) (\cite{berman2000protei
 
 Nine amino acids compose 1yt6, and its structure is characterized by only a beta sheet.  
 
- <img src="README_files/figure-html/scorpion.png" scale="0.5" label="fig:scorpion" cap="Three dimensional shape of 1yt6 protein."/>
-
-In Figure \ref{fig:scorpion} we can see the three dimensional shape of protein, that is given by PDB file, this also contains a matrix data, with fifty rows, each corresponding to an observation, and nine columns, one for each amino acid of the sequence.
+<figure>
+ <img src="README_files/figure-html/scorpion.png" width=50%/> <figcaption>Three dimensional shape of 1yt6 protein."</figcaption>
+</figure>
+In the last figure we can see the three dimensional shape of protein, that is given by PDB file, this also contains a matrix data, with fifty rows, each corresponding to an observation, and nine columns, one for each amino acid of the sequence.
 
