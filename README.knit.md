@@ -23,13 +23,10 @@ In structural biology there is an unsolved problem called \emph{protein folding 
 This is to predict the three dimensional structure of a protein given its amino acid sequence.\\
 
 
-Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.\\
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.6]{README_files/figure-html/pep}
-	\caption{Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide.  }
-	\label{fig:pep}
-\end{figure}
+Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.
+<img src="README_files/figure-html/pep" scale="0.6" label="fig:pep" />
+\caption{Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide.  }
+
 Specific atomic groups, so-called \emph{amino acids}, give rise to a protein. There are twenty commonly occurring amino acid, each with the same structure. In particular, an amino acid has a central carbon acid, denoting by $C^\alpha$, which bind to a hydrogen atom, $H$, an amine group $NH_2$ , a carboxyl group ($COOH$) and a side chain. The last identify the amino acid kind, while the carboxyl group makes a link among different amino acids, and is called peptide bond. Figure \ref{fig:pep} shows an example of this bond. One or more peptide bond form a polypeptide chains, and one or more of those form a protein.
 
 The amino acid sequence is called primary structure, the peptide chains are named secondary structure, instead, polypeptide chains are defined as tertiary structures. 
