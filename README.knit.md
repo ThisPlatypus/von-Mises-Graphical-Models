@@ -1,11 +1,17 @@
 Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random angles, it has a multivariate von Mises distribution; i.e. such that:
+
 $f_{{\Theta}}(\Theta)= C^{-1}_p({\kappa},{\Lambda})\exp\{{\kappa}^Tc({\Theta},{\mu})+\frac{1}{2}s({\Theta},{\mu})^T{\Lambda}s({\Theta},{\mu})\}$
 
-where $-\pi<\theta_j\leq\pi$ , $-\pi<\mu_j\leq\pi$, $\kappa_j \geq 0$ ,  $-\infty<\lambda_{jl}<\infty$, and  $C^{-1}_p ({\kappa},{\Lambda})$ is a normalizing constant, 
-$c({\Theta}, {\mu})^T=(\cos(\theta_1-\mu_1),\cos(\theta_2-\mu_2),\dots,\cos(\theta_p-\mu_p)),$ $s({\Theta},{\mu})^T=(\sin(\theta_1- \mu_1),\sin(\theta_2- \mu_2),\dots, \sin(\theta_p - \mu_p) ),$
+where $-\pi<\theta_j\leq\pi$  , $-\pi<\mu_j\leq\pi$ , $\kappa_j \geq 0$ ,  $-\infty<\lambda_{jl}<\infty$ , and  $C^{-1}_p({\kappa},{\Lambda})$ is a normalizing constant, 
+$c({\Theta}, {\mu})^T=(\cos(\theta_1-\mu_1),\cos(\theta_2-\mu_2),\dots,\cos(\theta_p-\mu_p)),$ 
+
+$s({\Theta},{\mu})^T=(\sin(\theta_1- \mu_1),\sin(\theta_2- \mu_2),\dots, \sin(\theta_p - \mu_p) ),$
+
 ${\mu}^T=(\mu_1, \mu_2, \dots, \mu_p)\\qquad\qquad{\kappa}^T=(\kappa_1,\kappa_2,\dots,\kappa_p),$
-$\lambda_{jl}=\lambda_{lj}\,\qquad\qquad\lambda_{jj}=0$
-It is possible to build a graphical model, $({G},Q)$, where ${G}=({V},{E})$, and the set ${V}$ contains $p$ vertices, each of this is referred about each variables ${\Theta}=(\Theta_1,\Theta_2,\dots,\Theta_p)$, and the set ${E}$ is such that a missing edge indicates a conditional independence among variables.
+
+$\lambda_(jl)=\lambda_(lj)\,\qquad\qquad\lambda_(jj)=0$
+
+It is possible to build a graphical model, $(G,Q)$, where $G=(V,E)$, and the set $V$ contains $p$ vertices, each of this is referred about each variables $\Theta=(\Theta_1,\Theta_2,\dots,\Theta_p)$, and the set $E$ is such that a missing edge indicates a conditional independence among variables.
 
 
 The literature about this kind of graphical models is really poor and it focuses the attention on protein structure problem. Some examples are: \cite{boomsma2008generative} that use a dynamic Bayesian network, specifically, they adapt a generalization of hidden Markov model, to localize the protein structure in naive status; \cite{lennox2009density} that present a Bayesian approach to density estimation for bivariate data which combines a Dirichlet process mixture model and a bivariate von Mises.\\
