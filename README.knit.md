@@ -9,7 +9,7 @@ $s({\Theta},{\mu})^T=(\sin(\theta_1- \mu_1),\sin(\theta_2- \mu_2),\dots, \sin(\t
 
 ${\mu}^T=(\mu_1, \mu_2, \dots, \mu_p)\\qquad\qquad{\kappa}^T=(\kappa_1,\kappa_2,\dots,\kappa_p),$
 
-$\lambda_(jl)=\lambda_(lj)\,\qquad\qquad\lambda_(jj)=0$
+$\lambda_{jl}=\lambda_{lj}\,\qquad\qquad\lambda_{jj}=0$
 
 It is possible to build a graphical model, $(G,Q)$, where $G=(V,E)$, and the set $V$ contains $p$ vertices, each of this is referred about each variables $\Theta=(\Theta_1,\Theta_2,\dots,\Theta_p)$, and the set $E$ is such that a missing edge indicates a conditional independence among variables.
 
@@ -26,7 +26,7 @@ This is to predict the three dimensional structure of a protein given its amino 
 Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.\\
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.6]{img/pep}
+	\includegraphics[scale=0.6]{README_files/figure-html/pep}
 	\caption{Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide.  }
 	\label{fig:pep}
 \end{figure}
