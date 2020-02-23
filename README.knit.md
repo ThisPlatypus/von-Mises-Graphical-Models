@@ -50,14 +50,12 @@ Definition of backbone:
 $$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -C_p$$
 
 <figure>
-<img src="README_files/figure-html/dihedral1.png" width=20%>
+<img src="README_files/figure-html/dihedral1.png" width=20%> <img src="README_files/figure-html/dihedral2.png" width=0%> 
+ <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
 </figure>
 
 
 We consider a dihedral angle, which is the angle between planes through two sets of three atoms, having two atoms in common. 
-<figure>
-<img src="README_files/figure-html/dihedral2.png" width=50%> <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
-</figure>
 
 
 Figure above shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2}, A_{i-1}, A_i , A_{i+1}$. It is important to know that the plane $\Pi_1$ passing through the atoms $A_i$ and $A_{i-2}$, as the plane $\Pi_2$ passing through the atoms $A_{i-1}$ and $A_{i+1}$. The angle $\theta$ is measured between $-\pi$ and $\pi$, the zero direction is observed when the plane $\Pi_1$ and $\Pi_2$ collapses. Clearly, if $A_{i}=N_i$, then $A_{i+1}=C_{i}$, $A_{i-1}=C^\alpha_i$ and $A_{i-2}=C_i$, while $\theta$ is $\phi_i$. This situation is clarifying in last figure.
