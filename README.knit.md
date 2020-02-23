@@ -50,7 +50,7 @@ Definition of backbone:
 $$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -C_p$$
 
 <figure>
-<img src="README_files/figure-html/dihedral1.png" width=20%> <img src="README_files/figure-html/dihedral2.png" width=0%> 
+<img src="README_files/figure-html/dihedral1.png" width=20%> <img src="README_files/figure-html/dihedral2.png" width=40%> 
  <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
 </figure>
 
