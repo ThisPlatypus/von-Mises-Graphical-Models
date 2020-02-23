@@ -29,7 +29,7 @@ This is to predict the three dimensional structure of a protein given its amino 
 Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.
 
 <figure>
-<img src="README_files/figure-html/pep.jpeg" width=30% label="fig:pep" >
+<img src="README_files/figure-html/pep.jpeg" width=30%> 
  <figcaption>Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide</figcaption>
 </figure>
 
@@ -49,27 +49,26 @@ $$ N_1 - C^\alpha_1 - C_1 - N_2 - C^\alpha_2 - C_2 - \cdots - N_p - C^\alpha_p -
 
 <figure>
 <img src="README_files/figure-html/dihedral1.png" width=20%>
- <label>fig:dihedral1</label> 
- </figure>
+</figure>
 
 
 We consider a dihedral angle, which is the angle between planes through two sets of three atoms, having two atoms in common. 
 <figure>
-<img src="README_files/figure-html/dihedral2.png" width=50%> <label>fig:dihedral2</label> <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
+<img src="README_files/figure-html/dihedral2.png" width=50%> <figcaption>Dihedral angles Phi, Psi, and Omega.</figcaption>
 </figure>
 
 
-Figure \ref{fig:dihedral1} shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2}, A_{i-1}, A_i , A_{i+1}$. It is important to know that the plane $\Pi_1$ passing through the atoms $A_i$ and $A_{i-2}$, as the plane $\Pi_2$ passing through the atoms $A_{i-1}$ and $A_{i+1}$. The angle $\theta$ is measured between $-\pi$ and $\pi$, the zero direction is observed when the plane $\Pi_1$ and $\Pi_2$ collapses. Clearly, if $A_{i}=N_i$, then $A_{i+1}=C_{i}$, $A_{i-1}=C^\alpha_i$ and $A_{i-2}=C_i$, while $\theta$ is $\phi_i$. This situation is clarifying in figure \ref{fig:dihedral2}.
+Figure above shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2}, A_{i-1}, A_i , A_{i+1}$. It is important to know that the plane $\Pi_1$ passing through the atoms $A_i$ and $A_{i-2}$, as the plane $\Pi_2$ passing through the atoms $A_{i-1}$ and $A_{i+1}$. The angle $\theta$ is measured between $-\pi$ and $\pi$, the zero direction is observed when the plane $\Pi_1$ and $\Pi_2$ collapses. Clearly, if $A_{i}=N_i$, then $A_{i+1}=C_{i}$, $A_{i-1}=C^\alpha_i$ and $A_{i-2}=C_i$, while $\theta$ is $\phi_i$. This situation is clarifying in last figure.
 
  However, most combinations of $\phi$ and $\psi$ angles are impossible because they would result in steric collisions between backbone and side chain atoms. Hence, it is useful to look at the Ramachandran plot. (\cite{ramachandran1968conformation}) 
  
  This graph plots $\psi$ versus $\phi$ angles for amino acid proteins, in this way the combination observables come out, and they can be classified as alpha helices and beta strands. The pairs ($\phi$, $\psi$)  commonly tends to make an asymmetric clusters: if $\psi$ angle is positive and $\phi$ is negative, then the pairs contributes to a beta stand shape, while if both of them are negative, they contributes to a right-handed alpha helices, and if both of them are positive, we can look a left-handed alpha helices.
  
  
- Figure \ref{fig:Rama} clarifies how to read a Ramachandran plot, and highlight each zone that corresponds to the different shape of the secondary structure.
+ Figure below clarifies how to read a Ramachandran plot, and highlight each zone that corresponds to the different shape of the secondary structure.
  
 <figure>
- <img src="README_files/figure-html/prova.png" width=50%> <label>fig:Rama</label> <figcaption>Ramachandran plot, that draws a Psi angle versus Phi angle.</figcaption>
+ <img src="README_files/figure-html/prova.png" width=50%>  <figcaption>Ramachandran plot, that draws a Psi angle versus Phi angle.</figcaption>
 </figure>
 
 ## Protein data
