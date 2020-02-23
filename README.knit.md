@@ -1,3 +1,5 @@
+figcaption:true
+
 Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random angles, it has a multivariate von Mises distribution; i.e. such that:
 
 $f_{{\Theta}}(\Theta)= C^{-1}_p({\kappa},{\Lambda})\exp\{{\kappa}^Tc({\Theta},{\mu})+\frac{1}{2}s({\Theta},{\mu})^T{\Lambda}s({\Theta},{\mu})\}$
@@ -26,7 +28,7 @@ This is to predict the three dimensional structure of a protein given its amino 
 
 Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in \cite{branden1999introduction, lesk2001introduction}.
 
-<img src="README_files/figure-html/pep.jpeg" scale="0.6" label="fig:pep" cap="Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide" />
+<img src="README_files/figure-html/pep.jpeg" width="2" height="3" label="fig:pep" cap="Peptide bond arising from the carboxyl group of the amino acid 1 condenses with anime group of amino acid 2. This drops a water molecule ($H_2O$) and form a peptide bond between the carbon atom of first amino acid and the nitrogen atom of the second amino acid. The process continues to produce a polypeptide" />
 
 
 Specific atomic groups, so-called \emph{amino acids}, give rise to a protein. There are twenty commonly occurring amino acid, each with the same structure. In particular, an amino acid has a central carbon acid, denoting by $C^\alpha$, which bind to a hydrogen atom, $H$, an amine group $NH_2$ , a carboxyl group ($COOH$) and a side chain. The last identify the amino acid kind, while the carboxyl group makes a link among different amino acids, and is called peptide bond. Figure \ref{fig:pep} shows an example of this bond. One or more peptide bond form a polypeptide chains, and one or more of those form a protein.
@@ -60,7 +62,7 @@ Figure \ref{fig:dihedral1} shows a dihedral angle $\theta$ defined in terms of a
  Figure \ref{fig:Rama} clarifies how to read a Ramachandran plot, and highlight each zone that corresponds to the different shape of the secondary structure.
  
  
- <img src="README_files/figure-html/prova.png" scale="0.5" label="fig:Rama" cap="Ramachandran plot, that draws a $\psi$ angle versus $\phi$ angle."/>
+ <img src="README_files/figure-html/prova.png" scale="0.5" label="fig:Rama" fig.cap="Ramachandran plot, that draws a $\psi$ angle versus $\phi$ angle."/>
 
 
 ## Protein data
