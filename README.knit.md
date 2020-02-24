@@ -73,7 +73,7 @@ Figure above shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2},
  <figcaption>Ramachandran plot, that draws a Psi angle versus Phi angle.</figcaption>
  </figure>
 
-## Protein data
+#### Protein data
 
 Protein structure can be surveyed  through an atomic level by X-ray diffraction and neutron-diffraction studies of crystallized proteins, and more recently through nuclear magnetic resonance (NMR) spectroscopy of proteins in solution. In this way, we observe the $N-C_\alpha$ and $C_\alpha - C$ bonds that are free rotation, and are represented by the torsion angle $\phi$ and $\psi$, respectively.
 
