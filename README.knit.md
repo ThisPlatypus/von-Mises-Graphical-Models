@@ -1,5 +1,8 @@
 # Von Mises Graphical Models
 
+A von Mises graphical models are a graphical models with a vertices that have a von Mises distributions. Obviously, the graph can be directed or not, we consider the directed graph, and we formally write as follows.
+
+
 Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random angles, it has a multivariate von Mises distribution; i.e. such that:
 
 $f_{{\Theta}}(\Theta)= C^{-1}_p({\kappa},{\Lambda})\exp\{{\kappa}^Tc({\Theta},{\mu})+\frac{1}{2}s({\Theta},{\mu})^T{\Lambda}s({\Theta},{\mu})\}$
