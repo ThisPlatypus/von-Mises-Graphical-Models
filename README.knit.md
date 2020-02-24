@@ -1,6 +1,6 @@
 # Von Mises Graphical Models
 
-A von Mises graphical models are a graphical models with a vertices that have a von Mises distributions. Obviously, the graph can be directed or not, we consider the directed graph, and we formally write as follows.
+A von Mises graphical models are a graphical models with a vertices that have a von Mises distributions. Obviously, the graph can be directed or not, we consider the directed one, and we formally write as follows.
 
 
 Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random angles, it has a multivariate von Mises distribution; i.e. such that:
@@ -8,6 +8,7 @@ Let  ${\Theta}= (\Theta_1, \Theta_2, \dots, \Theta_p)$ be a vector of random ang
 $f_{{\Theta}}(\Theta)= C^{-1}_p({\kappa},{\Lambda})\exp\{{\kappa}^Tc({\Theta},{\mu})+\frac{1}{2}s({\Theta},{\mu})^T{\Lambda}s({\Theta},{\mu})\}$
 
 where $-\pi<\theta_j\leq\pi$  , $-\pi<\mu_j\leq\pi$ , $\kappa_j \geq 0$ ,  $-\infty<\lambda_{jl}<\infty$ , and  $C^{-1}_p({\kappa},{\Lambda})$ is a normalizing constant, 
+
 $c({\Theta}, {\mu})^T=(\cos(\theta_1-\mu_1),\cos(\theta_2-\mu_2),\dots,\cos(\theta_p-\mu_p)),$ 
 
 $s({\Theta},{\mu})^T=(\sin(\theta_1- \mu_1),\sin(\theta_2- \mu_2),\dots, \sin(\theta_p - \mu_p) ),$
