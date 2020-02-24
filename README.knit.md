@@ -20,19 +20,20 @@ $\lambda_{jl}=\lambda_{lj}\,\qquad\qquad\lambda_{jj}=0$
 It is possible to build a graphical model, $(G,Q)$, where $G=(V,E)$, and the set $V$ contains $p$ vertices, each of this is referred about each variables $\Theta=(\Theta_1,\Theta_2,\dots,\Theta_p)$, and the set $E$ is such that a missing edge indicates a conditional independence among variables.
 
 
-The literature about this kind of graphical models is really poor and it focuses the attention on protein structure problem. Some examples are: <blockquote cite="https://www.pnas.org/content/105/26/8932?etoc-title=Boomsma"><p>Boomsma et al. (2008) </p> </blockquote> that use a dynamic Bayesian network, specifically, they adapt a generalization of hidden Markov model, to localize the protein structure in naive status; <blockquote cite="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835366/"><p>Lennox et al. (2009) </p> </blockquote>   that present a Bayesian approach to density estimation for bivariate data which combines a Dirichlet process mixture model and a bivariate von Mises.
+The literature about this kind of graphical models is really poor and it focuses the attention on protein structure problem. Some examples are: <a href="https://www.pnas.org/content/105/26/8932?etoc-title=Boomsma">Boomsma et al.(2008)</a> that use a dynamic Bayesian network, specifically, they adapt a generalization of hidden Markov model, to localize the protein structure in naive status;
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835366/">Lennox et al.(2009)</a>   that present a Bayesian approach to density estimation for bivariate data which combines a Dirichlet process mixture model and a bivariate von Mises.
 
-Most important work for our aim is one of<blockquote cite="http://ra.adm.cs.cmu.edu/anon/home/ftp/usr0/ftp/2011/CMU-CS-11-108.pdf"><p>Razavian et al. (2011).</p> </blockquote>  They would predict the three dimensional structure of a protein given its amino acid sequence, and adopting an undirected graphical model.
+Most important work for our aim is one of <a href="http://ra.adm.cs.cmu.edu/anon/home/ftp/usr0/ftp/2011/CMU-CS-11-108.pdf">Razavian et al. (2011).</a>  They would predict the three dimensional structure of a protein given its amino acid sequence, and adopting an undirected graphical model.
 They use a factor graph for study the independence structure, furthermore, they assume that angles of the amino acid sequence have a von Mises distribution.
 
 The biggest problem of this approach is that the likelihood, and consequentially the log-likelihood, are not in closed form. To overcome this problem, they use a pseudo-likelihood to parameter estimate.
 
 ## Introduction to protein structure
-In structural biology there is an unsolved problem called protein folding problem. In short, this problem is really important, in fact, since 1994, there is a biennial global competition called the Community Wide Experiment on the Critical Assessment of Techniques for Protein Structure Prediction (CASP). This competition has become the gold standard for assessing techniques, and the last year it has been won by a department of Google, Deep Mind, which has presented an Artificial Intelligence called  <blockquote cite="https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery"><p>AlphaFold</p> </blockquote>
+In structural biology there is an unsolved problem called protein folding problem. In short, this problem is really important, in fact, since 1994, there is a biennial global competition called the Community Wide Experiment on the Critical Assessment of Techniques for Protein Structure Prediction (CASP). This competition has become the gold standard for assessing techniques, and the last year it has been won by a department of Google, Deep Mind, which has presented an Artificial Intelligence called  <a href="https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery">AlphaFold</a>
 This is to predict the three dimensional structure of a protein given its amino acid sequence.
 
 
-Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in <blockquote cite="https://mospace.umsystem.edu/xmlui/bitstream/handle/10355/57017/research.pdf?sequence=2"><p>Brändén and Tooze (1999)</p> </blockquote><blockquote cite="https://pdfs.semanticscholar.org/9243/d38211a9220a5802d44e437e8fa4619a95c3.pdf"><p> Lesk (2001).</p> </blockquote>
+Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in <a href="https://mospace.umsystem.edu/xmlui/bitstream/handle/10355/57017/research.pdf?sequence=2">Brändén and Tooze (1999)</a> <a href="https://pdfs.semanticscholar.org/9243/d38211a9220a5802d44e437e8fa4619a95c3.pdf">Lesk (2001).</a>
 
 
 <figure>
@@ -41,7 +42,7 @@ Proteins are large and complex molecules, they are essential in sustaining life.
 </figure>
 
 
-Specific atomic groups, so-called \emph{amino acids}, give rise to a protein. There are twenty commonly occurring amino acid, each with the same structure. In particular, an amino acid has a central carbon acid, denoting by $C^\alpha$, which bind to a hydrogen atom, $H$, an amine group $NH_2$ , a carboxyl group ($COOH$) and a side chain. The last identify the amino acid kind, while the carboxyl group makes a link among different amino acids, and is called peptide bond. Figure above shows an example of this bond. One or more peptide bond form a polypeptide chains, and one or more of those form a protein.
+Specific atomic groups, so-called amino acids, give rise to a protein. There are twenty commonly occurring amino acid, each with the same structure. In particular, an amino acid has a central carbon acid, denoting by $C^\alpha$, which bind to a hydrogen atom, $H$, an amine group $NH_2$ , a carboxyl group ($COOH$) and a side chain. The last identify the amino acid kind, while the carboxyl group makes a link among different amino acids, and is called peptide bond. Figure above shows an example of this bond. One or more peptide bond form a polypeptide chains, and one or more of those form a protein.
 
 The amino acid sequence is called primary structure, the peptide chains are named secondary structure, instead, polypeptide chains are defined as tertiary structures. 
 
@@ -82,7 +83,7 @@ Figure above shows a dihedral angle $\theta$ defined in terms of atoms $A_{i-2},
 Protein structure can be surveyed  through an atomic level by X-ray diffraction and neutron-diffraction studies of crystallized proteins, and more recently through nuclear magnetic resonance (NMR) spectroscopy of proteins in solution. In this way, we observe the $N-C_\alpha$ and $C_\alpha - C$ bonds that are free rotation, and are represented by the torsion angle $\phi$ and $\psi$, respectively.
 
 
-Fortunately, there is a Protein Structure Databank (PDB), that collects over ten thousand angle pairs, which provide ample data for even relatively studies.  For our purpose, we choose an existing protein codifying as 1yt6, which is unclassified protein. This protein is cited for the first time in </blockquote><blockquote cite="https://febs.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1742-4658.2005.04902.x"><p> Murata et al. (2005).</p> </blockquote>
+Fortunately, there is a Protein Structure Databank (PDB), that collects over ten thousand angle pairs, which provide ample data for even relatively studies.  For our purpose, we choose an existing protein codifying as 1yt6, which is unclassified protein. This protein is cited for the first time in <a href="https://febs.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1742-4658.2005.04902.x">Murata et al. (2005).</a>
 
 
 Nine amino acids compose 1yt6, and its structure is characterized by only a beta sheet.  
