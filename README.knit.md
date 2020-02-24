@@ -33,7 +33,7 @@ In structural biology there is an unsolved problem called protein folding proble
 This is to predict the three dimensional structure of a protein given its amino acid sequence.
 
 
-Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in <a href="https://mospace.umsystem.edu/xmlui/bitstream/handle/10355/57017/research.pdf?sequence=2">Brändén and Tooze (1999)</a> <a href="https://pdfs.semanticscholar.org/9243/d38211a9220a5802d44e437e8fa4619a95c3.pdf">Lesk (2001).</a>
+Proteins are large and complex molecules, they are essential in sustaining life. In this paragraph, we give a brief outline of the fundamental aspects of their structure. For furthermore information can be found, for example in <a href="https://mospace.umsystem.edu/xmlui/bitstream/handle/10355/57017/research.pdf?sequence=2">Brändén and Tooze (1999)</a>; <a href="https://pdfs.semanticscholar.org/9243/d38211a9220a5802d44e437e8fa4619a95c3.pdf">Lesk (2001).</a>
 
 
 <figure>
