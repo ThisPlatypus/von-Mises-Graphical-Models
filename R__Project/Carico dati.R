@@ -1,14 +1,16 @@
+# Import librerie
 library(rstudioapi) 
 library(circular)
+library(bio3d)
+
+# Imposto la cartella di lavoro
 setwd(dirname(getActiveDocumentContext()$path))
 getwd()
 ##################
+
 # Carico i dati 1YT6
-library(bio3d)
-### Questa proteina ha 10 aminoacidi
-#dati <- read.pdb("/Users/gottard/Documents/Anna/Artic/Circular/Data/1YT6PeptideSD50/1yt6.pdb", multi = TRUE)
 dati <- read.pdb("D:/PROTEIN/R__Project/Data/1YT6PeptideSD50/1yt6.pdb", multi = TRUE)
-dati
+
 names(dati)
 dati$atom$resno # indicatore dell'aminoacido 
 dati$seqres # sequenza aminoacidi
@@ -28,24 +30,16 @@ dimnames(angoli)[[1]] <- paste("Mod", 1:50, sep="")
 dimnames(angoli)[[2]] <- as.vector(dati$seqres)
 dimnames(angoli)[[3]] <- colnames(tor$tbl)
 
-#angle1YT6 <- angoli
+
 angle<- angoli
 
 
 
-#tolgo la prima colonna perchè ha tutti NA
+#tolgo la prima colonna perchÃ¨ ha tutti NA
 Phi=angle[,,"phi"]
 Phi=Phi[,-1]
 dev.new()
 ggpairs(as.data.frame(Phi),mapping = aes(color = "#B3CDE3"), diag=NULL, upper = list(continuous = wrap("density", alpha = 0.5)))
-
-
-
-
-
-
-
-
 
 
 Phi1=as.circular(Phi, type="angles", units="radians", zero=circular(0), rotation="counter", template="none")
